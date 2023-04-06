@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Builder</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <h1>CV Builder</h1>
+    <form id="cvForm">
+
+
+
+        <label for="fullName"><h3>Nom Prenom:</h3></label>
+        <input type="text" required name="fullName" class="uploaded"  id="fullName" placeholder="Votre Nom et Prenom ici">
+        <label for="email"><h3>Email:</h3></label>
+        <input type="email" required name="email" class="uploaded" id="email" placeholder="Votre Email ici">
+        <label for="phone"><h3>Telephone:</h3></label>
+        <input type="tel" required name="phone" id="phone" placeholder="Votre Numero de Telephone ici">
+        <label for="age"><h3>Age:</h3></label>
+        <input type="number" required name="age" id="age" placeholder="Votre Age ici">
+        <label for="profilePic">Photo de Profile</label>
+        <div type="button"><input for="profilePic" type="file" name="profilePic" id="profilePic" accept="image/*" placeholder="Photo de Profil"></div>
+        <fieldset><img src="/server/uploads/1680155818140.jpg" style="max-width: 150px;max-height: 150px;"> </fieldset>
+
+     
+
+     
+
+
+
+        <section id="education">
+            
+        <label for="education"><h3>Qualification:</h3></label>
+       
+
+
+     
+     
+     
+     
+     
+     
+
+        <label for="educationPlaceName"><h5>Nom de l'Etablissement:</h5></label>
+
+        <input type="text" name="educationPlaceName" id="eduName" placeholder="Le Nom de votre Etablissement ici">
+
+        <select for="educationPlace" name="education" id="education" placeholder="type d'Organisme">
+            <option value="college">Education Superieure</option>
+            <option value="lycee">Centre de Formation</option>
+            <option value="universites">Ascertation en Ligne</option>
+            <option value="street">Centre Prives/BootCAMP</option>
+        </select>
+
+        <select for="educationYear" name="educationYear" id="educationYear" placeholder="L'annee De Votre Diplome">
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+            <option value="2012">2012</option>
+            <option value="2011">2011</option>
+            <option value="2010">2010</option>
+        </select>
+
+        <!-- <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;"> -->
+  
+            <label for="educationDiploma"><h5>Appellation du diplome:</h5></label>
+
+            
+            <input type="text" name="educationDiploma" id="educationDiploma" placeholder="Le Nom de votre Diplome ici">
+            
+    
+     
+
+        <button type="button" id="addEducationBtn">Ajoutez Votre Education</button>
+
+    
+    </section>
+
+
+        <div id="compContainer">
+             
+        </div>
+
+
+
+        <label for="compName"><h3>Experience:</h3></label>
+
+        <section id="company">
+            <label for="compName">Nom de la Company:</label>
+            
+
+        <input type="text" name="compName" id="compName">
+        
+</section>
+
+      
+        <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+            <label for="compLvl"><h3>Niveau :</h3></label>
+
+        <select name="compLvl" id="compLvl">
+                <option value="indefini">indefini</option>
+                <option value="juniorLvl">Junior/Entry-level</option>
+                <option value="experLvl">FullStack/Experienced</option>
+                <option value="benLvl">Ben/First-level Mgmt</option>
+                <option value="bossLvl">Boss/Senior Mgmt</option>
+        </select>
+
+
+        <label for="fromYear">From:</label>
+        <select name="fromYear" id="fromYear">
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+            <option value="2012">2012</option>
+            <option value="2011">2011</option>
+            <option value="2010">2010</option>
+        </select>
+        <label for="toYear">To:</label>
+        <select name="toYear" id="toYear">
+            <option value="present">Present</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+            <option value="2012">2012</option>
+            <option value="2011">2011</option>
+            <option value="2010">2010</option>
+        </select>
+        </div>
+      
+        <button type="button" id="addCompanyBtn">Ajoutez vos Experience</button>
+        
+        <input id="submit" type="submit" value="Submit"></input>
+        <span id="error"></span>
+    </form>
+
+    <script src="./app.js"></script>
+</body>
+</html>
